@@ -1,72 +1,101 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=FontName:wght@300;400;700&display=swap');
 
 body {
-    font-family: 'Roboto', Arial, sans-serif;
+    font-family: 'FontName', sans-serif;
+    color: #333;
+    background-color: #fff;
     margin: 0;
     padding: 0;
-    background-color: #ffffff;
-    color: #333333;
+    line-height: 1.6;
 }
 
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'FontName', sans-serif;
+    font-weight: 700;
+    margin-bottom: 20px;
+    color: #000;
+}
+
+p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Adjust spacing */
 .container {
-    display: flex;
-    flex-direction: row;
-    height: 100vh;
+    max-width: 1200px;
+    margin: 0 auto;
     padding: 20px;
 }
 
-.sidebar {
-    width: 200px;
+.header, .footer {
+    text-align: center;
     padding: 20px;
-    border-right: 0px solid #e0e0e0;
+    background-color: #f8f9fa;
 }
 
-.sidebar h1 {
-    font-size: 1.5rem;
-    font-weight: bold;
-    margin-bottom: 20px;
+.main-content {
+    padding: 40px 20px;
 }
 
-.sidebar nav ul {
-    list-style: none;
-    padding: 0;
-}
-
-.sidebar nav ul li {
-    margin-bottom: 10px;
-}
-
-.sidebar nav ul li a {
-    text-decoration: none;
-    color: #333333;
-    font-size: 1rem;
-}
-
-.sidebar nav ul li a:hover {
-    text-decoration: underline;
-}
-
-.content {
-    flex: 1;
-    padding: 20px;
-}
-
-.profile-pic {
-    width: 300px;
+.img-responsive {
+    max-width: 100%;
     height: auto;
-    margin-bottom: 20px;
 }
 
-.content p {
-    font-size: 1rem;
-    margin-bottom: 20px;
+/* Specific adjustments for images */
+.image-large {
+    width: 100%;
+    height: auto;
+    margin: 20px 0;
 }
 
-.content a {
-    color: #1a0dab;
+/* Example of alignment */
+.text-center {
+    text-align: center;
+}
+
+.text-left {
+    text-align: left;
+}
+
+.text-right {
+    text-align: right;
+}
+
+/* Button styles */
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: 700;
+    color: #fff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    text-align: center;
     text-decoration: none;
+    cursor: pointer;
 }
 
-.content a:hover {
-    text-decoration: underline;
+.button:hover {
+    background-color: #0056b3;
+}
+
+/* Example for forms */
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
 }
