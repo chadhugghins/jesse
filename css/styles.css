@@ -66,7 +66,7 @@ body {
 .profile-pic-wrapper {
     width: 100%;
     display: flex;
-    justify-content: center; /* Center the image horizontally */
+    justify-content: center; 
     margin-bottom: 20px;
 }
 
@@ -74,9 +74,6 @@ body {
     width: 300px;
     height: auto;
     width: 100%;
-    display: flex;
-    justify-content: center; /* Center the image horizontally */
-    margin-bottom: 20px;
 }
 
 .content p {
