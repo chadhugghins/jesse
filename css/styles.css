@@ -73,6 +73,10 @@ body {
 .profile-pic {
     width: 300px;
     height: auto;
+    width: 100%;
+    display: flex;
+    justify-content: center; /* Center the image horizontally */
+    margin-bottom: 20px;
 }
 
 .content p {
