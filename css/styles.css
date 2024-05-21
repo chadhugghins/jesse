@@ -7,8 +7,8 @@ body {
     background-color: #ffffff;
     color: #333333;
     display: flex;
-    justify-content: center; /* Center container horizontally */
-    align-items: center; /* Center container vertically */
+    justify-content: center; /* Center the container horizontally */
+    align-items: center; /* Center the container vertically */
     height: 100vh;
 }
 
@@ -17,13 +17,13 @@ body {
     flex-direction: row;
     padding: 20px;
     box-sizing: border-box;
-    align-items: flex-start; /* Align content to the top */
+    max-width: 960px; /* Set a maximum width for the container */
 }
 
 .sidebar {
     width: 200px;
     padding: 20px;
-    border-right: 0px solid #e0e0e0;
+    border-right: 0px solid #e0e0e0; /* Added border to separate sidebar */
 }
 
 .sidebar h1 {
@@ -54,11 +54,10 @@ body {
 .content {
     flex: 1;
     padding: 20px;
-    max-width: 640px;
     display: flex;
     flex-direction: column;
     align-items: center; /* Center content horizontally */
-    justify-content: center; /* Center content vertically if necessary */
+    justify-content: center; /* Center content vertically if needed */
 }
 
 .profile-pic {
